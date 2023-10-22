@@ -1507,7 +1507,17 @@ margin: 2em 0;
     top: 23px ;
     width: 5%;
 }
+.productss .card{
+    overflow: hidden;
+    border-radius: 8px;
+}
 @media (max-width:1200px){
+    .productss .card-title {
+        margin-bottom: 1em !important;
+    }
+    .productss{
+        margin-top: 3em;
+    }
     .finance-request .nav-tabs,
     .finance-request .edit-details,
     .profile .nav-tabs    {
@@ -1594,6 +1604,16 @@ margin: 2em 0;
     }
   }
   @media (max-width:767px){
+    .radio-buttons{
+        padding: 0 1rem;
+    }
+    .contact-info .mr-5{
+        margin-left: 1.5px !important;
+    }
+    .box .card {
+        max-height: 285px;
+        overflow: auto;
+    }
     .profile .nav-tabs {
         margin-bottom: 5em;
         align-items: center;
