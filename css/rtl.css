@@ -1511,6 +1511,11 @@ margin: 2em 0;
     overflow: hidden;
     border-radius: 8px;
 }
+.pos-fixed-bottom-center
+{
+left: unset !important;
+right: 0% !important;
+}
 @media (max-width:1200px){
     .productss .card-title {
         margin-bottom: 1em !important;
@@ -1604,6 +1609,12 @@ margin: 2em 0;
     }
   }
   @media (max-width:767px){
+    .single-pro-desc{
+        margin-top: -2em;
+    }
+    .contact-content.contact-product {
+        padding-top: 2em;
+    }
     .radio-buttons{
         padding: 0 1rem;
     }
@@ -1788,6 +1799,9 @@ footer  p.text-right.mb-0.fs-16{
 
 
   @media (min-width:768px) and (max-width:1200px){
+    .single-pro-desc{
+        margin-top: -1em;
+    }
   .finance-request .edit-details
   {
     padding: 1.5em 1em 0em 1em !important;
