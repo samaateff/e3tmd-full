@@ -1584,5 +1584,25 @@ $('.btnNext').click(function(){
   });
 
 
+  $( ".focus-label" ).on( "keypress", function() {
+    $(this).next('label').css('top', '5px');
+    $(this).next('label').css('font-size', '12px');
+  } );
+  $( ".focus-label" ).on( "keypress", function() {
+    $(this).css('padding-top', '35px');
+    $(this).css('padding-bottom', '15px');
+  } );
 
-  
+
+  $(".toggle-password").click(function() {
+
+  $(this).toggleClass("fa-eye fa-eye-slash");
+  var input = $($(this).attr("toggle"));
+  if (input.attr("type") == "password") {
+    input.attr("type", "text");
+  } else {
+    input.attr("type", "password");
+  }
+});
+
+

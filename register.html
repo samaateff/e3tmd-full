@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="css/themes.css">
     <link rel="stylesheet" href="css/rtl.css">
     <!-- Favicons -->
-    <link rel="icon" href="images/traveling.png">
+    <link rel="icon" href="images/WhatsApp Image 2023-10-23 at 20.45.54_49593aa2.jpg">
     <!-- Twitter -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@">
@@ -56,7 +56,7 @@
                     <div class="d-flex mt-3 mt-xl-0 align-items-center justify-content-center">
                       <a class="navbar-brand  d-inline-block py-0"
                                          href="index.html">
-                        <img src="images/Frame 3.png" alt="اعتمد">
+                        <img src="images/Frame 3.svg" alt="اعتمد">
                       </a>
                     </div>
                   </div>
@@ -90,8 +90,15 @@
                             <div class="row">
                               <div class="text-right col-md-12">
                               
-                                <input type="text" class="form-control" placeholder="الاسم" required="">
-                                <input type="email" class="form-control" placeholder=" رقم الهوية" required="">
+                                <div style="position: relative;" class="form-group">
+                                  <input  type="text" class="form-control focus-label input1"  required="" onkeypress="myFunction()">
+                                   <label class="hidden-label" style="">الاسم</label>
+                                  </div>
+                                <div style="position: relative;" class="form-group">
+                                <input  type="text" class="form-control focus-label input1" required="" onkeypress="myFunction()">
+                                 <label class="hidden-label" style="">رقم الهوية</label>
+                                </div>
+                             
                                 <div class="wrapper">
                                     <label for="datepicker">تاريخ الميلاد:
                                         <input type="text" id="datepicker" autocomplete="off" placeholder="00 / 00 / 0000">
@@ -99,10 +106,24 @@
                                     </label>	
                                    
                                 </div>
-                                <input type="phone" class="form-control" placeholder="رقم الجوال" required="">
-                                <input type="email" class="form-control" placeholder="البريد الالكتروني" required="">
-                                <input type="password" class="form-control" placeholder=" الرقم السري" required="">
-                
+                                <div style="position: relative;" class="form-group">
+                                  <input  type="phone" class="form-control focus-label" required="">
+                                   <label class="hidden-label" style="">رقم الجوال</label>
+                                  </div>
+                                  <div style="position: relative;" class="form-group">
+                                    <input  type="email" class="form-control focus-label" required="">
+                                     <label class="hidden-label" style="">البريد الالكتروني</label>
+                                    </div>
+                                 
+                                    <div style="position: relative;" class="form-group">
+                                      <input  type="password" class="form-control focus-label"  required="">
+                                       <label class="hidden-label" style="">الرقم السري </label>
+                                      </div>
+                                      <div style="position: relative;" class="form-group">
+                                          <input id="password-field" type="password" class="form-control focus-label" name="password">
+                                       <label class="hidden-label" style="">الرقم السري </label>
+                                          <span style="position: absolute; top: 19px ; left: 20px;" toggle="#password-field" class="fa fa-eye-slash field-icon toggle-password"></span>
+                                      </div>
                             
                 <div class="custome-mycheck reg-form">
                   <input id="checkbox-1" class="checkbox-custom" name="checkbox-1" type="checkbox">
@@ -115,10 +136,10 @@
                             </div>
                             </div>
                           <!-- Button trigger modal -->
-                <button type="button" class="btn mt-0 btn-home-form btn-secondary px-7 bg-hover-primary border-hover-primary" data-toggle="modal" data-target="#exampleModall">
+                <button style="color: #fff;"  type="button" class="btn mt-0 btn-home-form  px-7 " data-toggle="modal" data-target="#exampleModall">
                   ارسال
                 </button>
-                <a href="#" class="last-one">
+                <a href="login.html" class="last-one">
                     تسجيل الدخول
                 </a>
                           </form>
@@ -140,13 +161,28 @@
       <div class=" container">
         <div class="row align-items-center">
           <div class=" col-md-6 ">
-            <p style="color:#fff " class="text-right mb-0 fs-16">جميع الحقوق محفوظة لدى شركة
+            <p class="text-right mb-0 fs-16">جميع الحقوق محفوظة لدى شركة
              <span style="color: #FFBB0D;
              ">  اعتمد للتمويل 2023</span>
               </p>
           </div>
           <div class=" col-md-6 ">
-            <img src="images/Group 69506 1.png"/>
+            <svg height="90" width="102" style="
+              transform: rotateY(180deg) scale(.35);
+              background: red;
+              padding: 15px 15px 0 15px;
+              width: 100px;
+              height: 100px;
+              margin: -4em -1.5em;">
+              <line x1="0" y1="0" x2="90" y2="0" style="stroke: #fff
+              ;stroke-width:35;"></line>
+              <line x1="100" y1="0" x2="0" y2="10" style="stroke: #fff;stroke-width:20;transform:rotate(40deg);">
+              </line>
+              <line x1="10" y1="95" x2="50" y2="45" style="stroke: #fff
+              ;stroke-width:20;">
+              </line>
+          </svg>
+            <img src="images/Mask group.png"/>
           </div>
         </div>
         </div>

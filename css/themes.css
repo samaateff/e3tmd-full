@@ -21242,8 +21242,8 @@ a.bg-hover-violet:focus {
 }
 
 .pos-fixed-left-center {
-  top: 50%;
-  left: 0;
+  top: 53em;
+  right: 0;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
