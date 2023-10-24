@@ -1757,14 +1757,12 @@ background: url(<path-to-image>), lightgray 50% / cover no-repeat;
     display: none;
 }
 .home-section.web{
-    display: none;
-}
-.home-section.mob{
     display: block;
 }
-.d-block.hover-zoom-in.hover-shine.fadeIn.animated{
-    padding: 2.3em;
+.home-section.mob{
+    display: none;
 }
+
 .tab-content .table th, .table td {
     border-top: 1px solid #EEEEEE !important;
 }
@@ -1948,7 +1946,15 @@ line-height: 25px; /* 178.571% */
     }
   }
   @media (max-width:767px){
-
+    .accordion .card-header a{
+        padding: 1em;
+    }
+    .home-slider{
+        padding-top: 4em;
+    }
+    .d-block.hover-zoom-in.hover-shine.fadeIn.animated{
+        padding: 2.3em;
+    }
     .profile .nav-pills .nav-link {
         width: 150px;
         margin: 5px auto;   
@@ -2185,3 +2191,6 @@ footer  p.text-right.mb-0.fs-16{
     padding-right: 1em !important;
 }
   }
+  .sidenav .card-body span {
+    font-size: 14px !important;
+}
