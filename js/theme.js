@@ -1476,12 +1476,12 @@
 /* EXAMPLE CODE */
 $(function() {
     $("#year-slider .slider").noUiSlider({
-      start: 5,
+      start: 3,
       step: 1,
       connect: "lower",
       range: {
         'min': 0,
-        'max': 7
+        'max': 5
       },
       serialization: {
         format: {

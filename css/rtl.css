@@ -317,7 +317,7 @@ line-height: 25px; /* 178.571% */
      margin: 1.5em auto;
   }
   .eleven-columns li {
-      width:calc(100% / 7);
+      width:calc(100% / 5);
   }
   .form-control:focus{
     border-color: #B4D1D3;
@@ -1866,13 +1866,13 @@ a.navbar-brand, a.nav-link , a.dropdown-link, a.d-block.fadeIn.animated,
     box-shadow: unset !important;
 }
 .btn-download:hover , .btn-func:hover, .btn-func-bk:hover, .btn-home-form:hover, .btn-shop:hover, .btn-shopp:hover,
-.log-btn:hover, .reg-btn:hover , .btnNext:hover , .btnPrevious:hover {
+.log-btn:hover, .reg-btn:hover , .btnNext:hover , .btnPrevious:hover, .complains:hover{
 background: #0E8287 !important;
 box-shadow: 0px 4px 4px 0px rgba(13, 108, 112, 0.16) !important;
 color: #fff !important;
 }
 .btn-download , .btn-func, .btn-func-bk, .btn-home-form, .btn-shop, .btn-shopp,
-.log-btn, .reg-btn , .btnNext, .btnPrevious{
+.log-btn, .reg-btn , .btnNext, .btnPrevious, .complains{
     box-shadow: 0px 4px 4px 0px rgba(13, 108, 112, 0.16) !important;
 }
 .msg-div:hover{
@@ -1917,6 +1917,10 @@ border-left: 1px solid var(--dark, #013A3D) !important;
 }
 .hover-zoom-in:hover img, .hover-zoom-in:hover .img, .hover-zoom-in:hover .card-img{
     transform: unset !important;
+}
+.sidenav .nav-link.dropdown-toggle .caret {
+    margin-left: 0;
+    margin-top: -3px;
 }
 @media (max-width:1200px){
     .sidenav  .caret {
