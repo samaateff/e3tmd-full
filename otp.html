@@ -90,17 +90,16 @@
                               رقم جوالك لتأكد من عميلة الدخول الأن
                             </p>
                             </div>
-                           <form style="position: relative;">
+                           <form class="otp-form email-otp" style="position: relative;">
                             <div class="row">
                               <div class="text-right col-md-12">
                               
-                          <div class="d-flex justify-content-center align-items-center text-center">
-                                <input type="password" class="form-control" placeholder=" الرقم السري" required="">
-                                <input type="password" class="form-control" placeholder=" الرقم السري" required="">
-                                <input type="password" class="form-control" placeholder=" الرقم السري" required="">
-                                <input type="password" class="form-control" placeholder=" الرقم السري" required="">
-                                <input type="password" class="form-control" placeholder=" الرقم السري" required="">
-                
+                          <div class="d-flex justify-content-center align-items-center text-center email-otp-container">
+                                   <input type="phone" class="email-otp-input form-control" pattern="\d" maxlength="1">
+                                  <input type="phone" class="email-otp-input form-control" pattern="\d" maxlength="1" disabled>
+                                  <input type="phone" class="email-otp-input form-control" pattern="\d" maxlength="1" disabled>
+                                  <input type="phone" class="email-otp-input form-control" pattern="\d" maxlength="1" disabled>
+                                  <input type="phone" class="email-otp-input form-control" pattern="\d" maxlength="1" disabled>
                             </div>
              
                             </div>
@@ -144,6 +143,7 @@
                          </label>
                 </div>
                           </form>
+                      
                 </div>
                     </div>
                     <div class="col-md-2">

@@ -210,6 +210,7 @@ height: 82px;
 font-size: 14px;
 font-style: normal;
 font-weight: 400;
+z-index: 9;
 }
 .complains:hover{
     background: #0D6C70;
@@ -252,9 +253,7 @@ font-weight: 400;
     max-height: 41px;
     min-height: 41px;
 }
-.finance-section a:hover img{
-    filter:  brightness(0) invert(1);
-}
+
 .finance-section h2{
     margin-bottom: 1em !important;
 }
@@ -318,7 +317,7 @@ line-height: 25px; /* 178.571% */
      margin: 1.5em auto;
   }
   .eleven-columns li {
-      width:calc(100% / 10);
+      width:calc(100% / 7);
   }
   .form-control:focus{
     border-color: #B4D1D3;
@@ -1708,7 +1707,7 @@ line-height: 25px; /* 156.25% */
         margin: 1em 0;
     }
     .about-us-desc{
-        margin-bottom: 20px; padding: 10px 10px 30px 0px; margin-top: -10em;
+     padding: 10px 10px 0px 0px; margin-top: -10em;
     }
     .about-us-con{
         padding: 0px 80px;
@@ -1835,7 +1834,90 @@ font-style: normal;
 font-weight: 400;
 line-height: 25px; /* 178.571% */
 }
+.otp-form .form-control{
+    padding: unset !important;
+    text-align: center !important;
+}
+iframe{
+    max-width: 100% !important;
+}
 
+.finance-section a.btn {
+    transition: all 0.2s;
+}
+.finance-section a.btn:hover{
+    border-radius: 16px;
+border-top: 1px solid var(--dark, #013A3D) !important;
+border-right: 4px solid var(--dark, #013A3D) !important;
+border-bottom: 4px solid var(--dark, #013A3D) !important;
+border-left: 1px solid var(--dark, #013A3D) !important;
+border-radius: 16px;
+border-top: 1px solid var(--dark, #013A3D);
+border-right: 4px solid var(--dark, #013A3D);
+border-bottom: 4px solid var(--dark, #013A3D);
+border-left: 1px solid var(--dark, #013A3D);
+background: #fff !important;
+background-color: #fff !important;
+opacity: 1 !important;
+color:#000 !important
+}
+a.navbar-brand, a.nav-link , a.dropdown-link, a.d-block.fadeIn.animated,
+.card-title a, a.card-text, .accordion .card-header a {
+    box-shadow: unset !important;
+}
+.btn-download:hover , .btn-func:hover, .btn-func-bk:hover, .btn-home-form:hover, .btn-shop:hover, .btn-shopp:hover,
+.log-btn:hover, .reg-btn:hover , .btnNext:hover , .btnPrevious:hover {
+background: #0E8287 !important;
+box-shadow: 0px 4px 4px 0px rgba(13, 108, 112, 0.16) !important;
+color: #fff !important;
+}
+.btn-download , .btn-func, .btn-func-bk, .btn-home-form, .btn-shop, .btn-shopp,
+.log-btn, .reg-btn , .btnNext, .btnPrevious{
+    box-shadow: 0px 4px 4px 0px rgba(13, 108, 112, 0.16) !important;
+}
+.msg-div:hover{
+    border-top: 1px solid var(--dark, #013A3D);
+border-right: 4px solid var(--dark, #013A3D);
+border-bottom: 4px solid var(--dark, #013A3D);
+border-left: 1px solid var(--dark, #013A3D);
+background: var(--green-500, #0D6C70);
+}
+.msg-div svg.num-one{
+    stroke:#0D6C70;
+    fill:none;
+}
+.msg-div svg.num-two{
+    stroke:none;
+    fill:#0D6C70;
+}
+.msg-div:hover h4 , .msg-div:hover p , .msg-div:hover svg.num-one{
+    color: #fff;
+    /* fill: #fff !important; */
+    stroke: #fff ;
+}
+.msg-div:hover svg.num-two{
+  fill: #fff;
+  stroke: none;
+}
+.msg-div{
+    transition: 0.5s;
+}
+.card:hover{
+border-top: 1px solid var(--dark, #013A3D) !important;
+border-right: 4px solid var(--dark, #013A3D) !important;
+border-bottom: 4px solid var(--dark, #013A3D) !important;
+border-left: 1px solid var(--dark, #013A3D) !important;
+/* background: var(--white, #FFF); */
+}
+.how-work .card.border-0.text-center.mb-lg-0.mb-8:hover{
+    border-top:unset!important;
+    border-right: unset !important;
+    border-bottom:unset !important;
+    border-left:unset !important;
+}
+.hover-zoom-in:hover img, .hover-zoom-in:hover .img, .hover-zoom-in:hover .card-img{
+    transform: unset !important;
+}
 @media (max-width:1200px){
     .sidenav  .caret {
         margin-left: unset;
