@@ -151,9 +151,9 @@
                        <div class="input-group position-relative mw-270 mr-auto">
                          <input type="text" class="form-control form-control bg-transparent border-2x rounded" placeholder="بحث برقم الطلب ">
                          <div class="input-group-append position-absolute pos-fixed-right-center">
-                           <button class="input-group-text bg-transparent border-0 px-0 fs-28 pr-3" type="submit">
-                             <i class="fal fa-search fs-20 font-weight-normal"></i>
-                           </button>
+                          <button class="input-group-text bg-transparent border-0 px-0 fs-28 pr-3" type="button" data-toggle="modal" data-target="#exampleModall">
+                            <i class="fal fa-search fs-20 font-weight-normal"></i>
+                          </button>
                          </div>
                        </div>
                        <ul class="navbar-nav hover-menu main-menu">
@@ -202,13 +202,62 @@
                                      href="index-logged.html">
                      <img src="images/Frame 3.png" alt="اعتمد">
                    </a></div>
-                 <a href="#search-popup" data-gtf-mfp="true"
-                data-mfp-options='{"type":"inline","focus": "#keyword","mainClass": "mfp-search-form mfp-move-from-top mfp-align-top"}'
-                class="nav-search d-flex align-items-center">
-                   <svg class="icon icon-magnifying-glass-light fs-28">
-                     <use xlink:href="#icon-magnifying-glass-light"></use>
-                   </svg>
-                   <span class="d-none d-xl-inline-block ml-2 font-weight-500">Search</span></a>
+                   <button type="button" data-toggle="modal" data-target="#exampleModalll"
+                   class="nav-search d-flex align-items-center srch-mob-btn">
+                      <svg class="icon icon-magnifying-glass-light fs-28">
+                        <use xlink:href="#icon-magnifying-glass-light"></use>
+                      </svg>
+                      <span class="d-none d-xl-inline-block ml-2 font-weight-500">Search</span></button>
+      
+      
+      
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModalll" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+           
+            <div class="modal-body">
+              <form class="table-responsive-md">
+                <table style="border-radius: 16px;" class="table  mb-0">
+                  <tbody>
+                    <tr style="background: #0D6C70; color: #fff;" class="position-relative">
+                      <td style="padding: 0.75rem;" class="align-middle text-right pr-6">
+                        <span > رقم الطلب</span>
+                 
+                      </td>
+                      <td style="padding: 0.75rem;" class="align-middle text-right pr-6">
+                        <span> تاريخ الطلب</span>
+                 
+                      </td>
+                      <td style="padding: 0.75rem;" class="align-middle text-right pr-6">
+                        <span >حالة الطلب</span>
+                 
+                      </td>
+                    </tr>
+               
+                    <tr class="position-relative">
+                      <td class="align-middle text-right pr-6">
+                        <span > 123423455346795</span>
+                 
+                      </td>
+                      <td class="align-middle text-right pr-6">
+                        <span > 2023 / 06 / 11 </span>
+                 
+                      </td>
+                      <td class="align-middle text-right pr-6">
+                        <span > مقبول</span>
+                 
+                      </td>
+                    </tr>
+            
+                  </tbody>
+                </table>
+              </form>
+            </div>
+          
+          </div>
+        </div>
+      </div>
                </div>
              </nav>
            </div>
@@ -404,6 +453,148 @@
                 
                 
             </div>
+        </div>
+        <section class="calender-section mt-10" style="background: var(--green-500, #0D6C70); margin-top: 120px !important;    padding: 10em 5em; max-height: 700px;" >
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4">
+                <div style="position: relative;">
+                  <svg style="    max-width: 100%;
+                  min-width: 700px;
+                  transform: translate(100px, -234px);" xmlns="http://www.w3.org/2000/svg" width="900" height="900" viewBox="0 0 739 643" fill="none">
+                    <path opacity="0.06" d="M266.075 458.016C407.83 293.459 564.764 133.227 736.706 0.290231C736.963 0.0952738 737.277 -0.00683956 737.599 0.000355823C737.921 0.0075512 738.231 0.123645 738.479 0.329902C738.728 0.536158 738.9 0.820554 738.968 1.13725C739.036 1.45395 738.996 1.78448 738.854 2.07554C730.623 18.6927 721.743 35.2411 712.216 51.7209C589.049 264.963 438.494 456.746 282.14 642.315C281.435 643.139 280.651 643.22 279.787 642.556C171.39 558.715 72.6453 456.128 5.89483 335.07C2.91601 329.669 0.960447 324.29 0.0281457 318.934C-0.0309175 318.57 0.00333315 318.197 0.127533 317.851C0.251733 317.505 0.461631 317.197 0.736681 316.958C1.01173 316.72 1.3425 316.558 1.69662 316.489C2.05074 316.42 2.41607 316.446 2.75684 316.565C97.681 348.666 182.987 398.483 262.323 458.394C262.88 458.821 263.577 459.02 264.273 458.95C264.97 458.88 265.614 458.546 266.075 458.016Z" fill="#F0F7F8"/>
+                  </svg>
+                  <div style="position: absolute; top: 160px;">
+                  <h4 class="calender-add">الاله الحاسبه التقريبية</h4>
+                  <p class="calender-desc">
+                    هي عبارة عن حاسبة بشكل تقريبي تستطيع من خلالها معرفة القسط المستحق كل شهر  + المدة عند ادخالك المبلغ ومدة السداد بالشهر
+                  </p>
+               </div>
+                </div>
+               <img style="    transform: translate(9em, -35em);" src="images/Misc_01.png"/>
+              </div>
+              <div class="col-md-2">
+                <img style="transform: translate(-100px, 150px);" src="images/Highlight_10.png" c/>
+              </div>
+              <div class="col-md-6">
+               <div class="form-div one">
+                <form>
+                  <div class="row mb-6">
+                    <div class="text-right col-sm-12 mb-6 mb-sm-0">
+                      <label>مبلغ التمويل</label>
+                      <input type="text" class="form-control" placeholder="0" required>
+                    </div>
+                 
+                  </div>
+                  <div class="form-group mb-4">
+                    <div class="well text-right">
+                      <label>مدة السداد بالشهور</label>
+                      
+                      <div id="year-slider" class="no-ui-slider">
+                        <div class="slider"></div>
+                        <ul class="slider-labels eleven-columns">
+                          <li>36</li>
+                          <li>30</li>
+                          <li>24</li>
+                          <li class="active">18</li>
+                          <li>12</li>
+                          <li >6</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <button type="button" class="btn btn-func btn-home-form btn-secondary px-7  border-hover-primary">احسب الان</button>
+                </form>
+                </div>
+                <div class="form-div two">
+                  <form>
+                    <div class="row mb-6">
+                      <div class="text-right col-sm-12 mb-6 mb-sm-0">
+                        <label> القسط الشهري</label>
+                        <input style="color: #0D6C70; font-weight: bold;" type="text" class="form-control" value="2000" required>
+                      </div>
+                   
+                    </div>
+                    <div class="form-group mb-4">
+                      <div class="well text-right">
+                        <label>مدة السداد بالشهور</label>
+                        
+                        <h6>12 شهر</h6>
+                      </div>
+                    </div>
+                    <button type="button" class="btn btn-func-bk btn-home-form btn-secondary px-7 bg-hover-primary border-hover-primary"> رجوع</button>
+                  </form>
+                  </div>
+                <img style="    transform: translate(-69px, -10px);" src="images/Misc_03.png"/>
+              </div>
+           
+            </div>
+          </div>
+        </section>
+        <div class="calender-section-mob mt-10" style="margin-top: 120px !important;">
+          <div class="container">
+             <div class="row">
+               <div class="col-md-6">
+                <div class="frist-section">
+                  <h4 class="calender-add">الاله الحاسبه التقريبية</h4>
+                  <p class="calender-desc">
+                    هي عبارة عن حاسبة بشكل تقريبي تستطيع من خلالها معرفة القسط المستحق كل شهر  + المدة عند ادخالك المبلغ ومدة السداد بالشهر
+                  </p>
+               </div>
+               </div>
+               <div class="col-md-6">
+                <div style="margin: auto;" class="form-div one">
+                  <form>
+                    <div class="row mb-6">
+                      <div class="text-right col-sm-12 mb-6 mb-sm-0">
+                        <label>مبلغ التمويل</label>
+                        <input type="text" class="form-control" placeholder="0" required>
+                      </div>
+                   
+                    </div>
+                    <div class="form-group mb-4">
+                      <div class="well text-right">
+                        <label>مدة السداد بالشهور</label>
+                        
+                        <div id="year-slider" class="no-ui-slider">
+                          <div class="slider"></div>
+                          <ul class="slider-labels eleven-columns">
+                            <li>36</li>
+                            <li>30</li>
+                            <li>24</li>
+                            <li class="active">18</li>
+                            <li>12</li>
+                            <li >6</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <button type="button" class="btn btn-func btn-home-form btn-secondary px-7 bg-hover-primary border-hover-primary">احسب الان</button>
+                  </form>
+                  </div>
+                  <div style="margin: auto;" class="form-div two">
+                    <form>
+                      <div class="row mb-6">
+                        <div class="text-right col-sm-12 mb-6 mb-sm-0">
+                          <label> القسط الشهري</label>
+                        <input style="color: #0D6C70; font-weight: bold;" type="text" class="form-control" value="2000" required>
+  
+                        </div>
+                     
+                      </div>
+                      <div class="form-group mb-4">
+                        <div class="well text-right">
+                          <label>مدة السداد بالشهور</label>
+                          
+                          <h6>12 شهر</h6>
+                        </div>
+                      </div>
+                      <button type="button" class="btn btn-func-bk btn-home-form btn-secondary px-7 bg-hover-primary border-hover-primary"> رجوع</button>
+                    </form>
+                    </div>
+               </div>
+             </div>
+          </div>
         </div>
         </div>
         <div class="container">
@@ -1001,12 +1192,12 @@
     </div>
 
              <!-- Button trigger modal -->
-<button type="button" class="btn complains position-fixed pos-fixed-left-center   ">
+<!-- <button type="button" class="btn complains position-fixed pos-fixed-left-center   ">
   <img class="complains-img" src="images/complain.png"/>
           
   الشكاوي
 
-</button>
+</button> -->
 
 
 
@@ -1188,14 +1379,15 @@
            ">  اعتمد للتمويل 2023</span>
             </p>
         </div>
-        <div class=" col-md-6 ">
+        <div class=" col-md-6 d-flex justify-content-end text-right mob-col">
+          <a href="#">
           <svg height="90" width="102" style="
             transform: rotateY(180deg) scale(.35);
             background: red;
             padding: 15px 15px 0 15px;
             width: 100px;
             height: 100px;
-            margin: -4em -1.5em;">
+            margin: -1.8em -1.5em;">
             <line x1="0" y1="0" x2="90" y2="0" style="stroke: #fff
             ;stroke-width:35;"></line>
             <line x1="100" y1="0" x2="0" y2="10" style="stroke: #fff;stroke-width:20;transform:rotate(40deg);">
@@ -1204,7 +1396,14 @@
             ;stroke-width:20;">
             </line>
         </svg>
-          <img src="images/Mask group.png"/>
+        </a>
+          <!-- <img src="images/Mask group.png"/> -->
+        
+          <div>
+           <a href="#"><h6 style="color: #fff; font-size: 15px;">مؤسسة الرياض</h6></a>
+           <a href="#"><h6 style="font-size: 13px; color: #fff;">web & app solution</h6> </a>
+          </div>
+          
         </div>
       </div>
       </div>

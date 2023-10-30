@@ -149,9 +149,9 @@
                        <div class="input-group position-relative mw-270 mr-auto">
                          <input type="text" class="form-control form-control bg-transparent border-2x rounded" placeholder="بحث برقم الطلب ">
                          <div class="input-group-append position-absolute pos-fixed-right-center">
-                           <button class="input-group-text bg-transparent border-0 px-0 fs-28 pr-3" type="submit">
-                             <i class="fal fa-search fs-20 font-weight-normal"></i>
-                           </button>
+                          <button class="input-group-text bg-transparent border-0 px-0 fs-28 pr-3" type="button" data-toggle="modal" data-target="#exampleModall">
+                            <i class="fal fa-search fs-20 font-weight-normal"></i>
+                          </button>
                          </div>
                        </div>
                        <ul class="navbar-nav hover-menu main-menu">
@@ -200,13 +200,62 @@
                                      href="index-logged.html">
                      <img src="images/Frame 3.png" alt="اعتمد">
                    </a></div>
-                 <a href="#search-popup" data-gtf-mfp="true"
-                data-mfp-options='{"type":"inline","focus": "#keyword","mainClass": "mfp-search-form mfp-move-from-top mfp-align-top"}'
-                class="nav-search d-flex align-items-center">
-                   <svg class="icon icon-magnifying-glass-light fs-28">
-                     <use xlink:href="#icon-magnifying-glass-light"></use>
-                   </svg>
-                   <span class="d-none d-xl-inline-block ml-2 font-weight-500">Search</span></a>
+                   <button type="button" data-toggle="modal" data-target="#exampleModalll"
+                   class="nav-search d-flex align-items-center srch-mob-btn">
+                      <svg class="icon icon-magnifying-glass-light fs-28">
+                        <use xlink:href="#icon-magnifying-glass-light"></use>
+                      </svg>
+                      <span class="d-none d-xl-inline-block ml-2 font-weight-500">Search</span></button>
+      
+      
+      
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModalll" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+           
+            <div class="modal-body">
+              <form class="table-responsive-md">
+                <table style="border-radius: 16px;" class="table  mb-0">
+                  <tbody>
+                    <tr style="background: #0D6C70; color: #fff;" class="position-relative">
+                      <td style="padding: 0.75rem;" class="align-middle text-right pr-6">
+                        <span > رقم الطلب</span>
+                 
+                      </td>
+                      <td style="padding: 0.75rem;" class="align-middle text-right pr-6">
+                        <span> تاريخ الطلب</span>
+                 
+                      </td>
+                      <td style="padding: 0.75rem;" class="align-middle text-right pr-6">
+                        <span >حالة الطلب</span>
+                 
+                      </td>
+                    </tr>
+               
+                    <tr class="position-relative">
+                      <td class="align-middle text-right pr-6">
+                        <span > 123423455346795</span>
+                 
+                      </td>
+                      <td class="align-middle text-right pr-6">
+                        <span > 2023 / 06 / 11 </span>
+                 
+                      </td>
+                      <td class="align-middle text-right pr-6">
+                        <span > مقبول</span>
+                 
+                      </td>
+                    </tr>
+            
+                  </tbody>
+                </table>
+              </form>
+            </div>
+          
+          </div>
+        </div>
+      </div>
                </div>
              </nav>
            </div>
@@ -259,12 +308,12 @@
         </div>
 
     <!-- Button trigger modal -->
-    <button type="button" class="btn complains position-fixed pos-fixed-left-center">
+    <!-- <button type="button" class="btn complains position-fixed pos-fixed-left-center">
       <img class="complains-img" src="images/complain.png"/>
               
       الشكاوي
     
-    </button>
+    </button> -->
 
 
 <!-- Modal -->
@@ -1135,33 +1184,41 @@
       </div>
       <hr/>
       <div class=" container">
-      <div class="row align-items-center">
-        <div class=" col-md-6 ">
-          <p class="text-right mb-0 fs-16">جميع الحقوق محفوظة لدى شركة
-           <span style="color: #FFBB0D;
-           ">  اعتمد للتمويل 2023</span>
-            </p>
+        <div class="row align-items-center">
+          <div class=" col-md-6 ">
+            <p class="text-right mb-0 fs-16">جميع الحقوق محفوظة لدى شركة
+             <span style="color: #FFBB0D;
+             ">  اعتمد للتمويل 2023</span>
+              </p>
+          </div>
+          <div class=" col-md-6 d-flex justify-content-end text-right mob-col">
+            <a href="#">
+            <svg height="90" width="102" style="
+              transform: rotateY(180deg) scale(.35);
+              background: red;
+              padding: 15px 15px 0 15px;
+              width: 100px;
+              height: 100px;
+              margin: -1.8em -1.5em;">
+              <line x1="0" y1="0" x2="90" y2="0" style="stroke: #fff
+              ;stroke-width:35;"></line>
+              <line x1="100" y1="0" x2="0" y2="10" style="stroke: #fff;stroke-width:20;transform:rotate(40deg);">
+              </line>
+              <line x1="10" y1="95" x2="50" y2="45" style="stroke: #fff
+              ;stroke-width:20;">
+              </line>
+          </svg>
+          </a>
+            <!-- <img src="images/Mask group.png"/> -->
+          
+            <div>
+             <a href="#"><h6 style="color: #fff; font-size: 15px;">مؤسسة الرياض</h6></a>
+             <a href="#"><h6 style="font-size: 13px; color: #fff;">web & app solution</h6> </a>
+            </div>
+            
+          </div>
         </div>
-        <div class=" col-md-6 ">
-          <svg height="90" width="102" style="
-            transform: rotateY(180deg) scale(.35);
-            background: red;
-            padding: 15px 15px 0 15px;
-            width: 100px;
-            height: 100px;
-            margin: -4em -1.5em;">
-            <line x1="0" y1="0" x2="90" y2="0" style="stroke: #fff
-            ;stroke-width:35;"></line>
-            <line x1="100" y1="0" x2="0" y2="10" style="stroke: #fff;stroke-width:20;transform:rotate(40deg);">
-            </line>
-            <line x1="10" y1="95" x2="50" y2="45" style="stroke: #fff
-            ;stroke-width:20;">
-            </line>
-        </svg>
-          <img src="images/Mask group.png"/>
         </div>
-      </div>
-      </div>
     </footer>
     <!-- Vendors scripts -->
     <script src="vendors/jquery.min.js"></script>

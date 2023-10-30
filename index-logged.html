@@ -149,9 +149,16 @@
                     <div class="input-group position-relative mw-270 mr-auto">
                       <input type="text" class="form-control form-control bg-transparent border-2x rounded" placeholder="بحث برقم الطلب ">
                       <div class="input-group-append position-absolute pos-fixed-right-center">
-                        <button class="input-group-text bg-transparent border-0 px-0 fs-28 pr-3" type="submit">
+                        <button class="input-group-text bg-transparent border-0 px-0 fs-28 pr-3" type="button" data-toggle="modal" data-target="#exampleModall">
                           <i class="fal fa-search fs-20 font-weight-normal"></i>
                         </button>
+                            <!-- Button trigger modal -->
+<!-- <button type="button" class="btn complains position-fixed pos-fixed-left-center " data-toggle="modal" data-target="#exampleModal">
+  <img class="complains-img" src="images/complain.png"/>
+          
+  الشكاوي
+
+</button> -->
                       </div>
                     </div>
                     <ul class="navbar-nav hover-menu main-menu">
@@ -200,58 +207,17 @@
 					                        href="index-logged.html">
                   <img src="images/Frame 3.png" alt="اعتمد">
                 </a></div>
-              <a href="#search-popup" data-gtf-mfp="true"
-					   data-mfp-options='{"type":"inline","focus": "#keyword","mainClass": "mfp-search-form mfp-move-from-top mfp-align-top"}'
-					   class="nav-search d-flex align-items-center">
+              <button type="button" data-toggle="modal" data-target="#exampleModalll"
+					   class="nav-search d-flex align-items-center srch-mob-btn">
                 <svg class="icon icon-magnifying-glass-light fs-28">
                   <use xlink:href="#icon-magnifying-glass-light"></use>
                 </svg>
-                <span class="d-none d-xl-inline-block ml-2 font-weight-500">Search</span></a>
-            </div>
-          </nav>
-        </div>
-      </div>
-      </div>
-    </header>
-    <main id="content">
-      <section class="home-section web" style="padding: 10px 10px 0px 0px; ">
-        <div  class="container-fluid home-desc">
-          <div class="row align-items-center no-gutters">
-            <div class="home-content col-md-6 text-right py-lg-0 py-11 px-sm-0">
-              <h2 class=" lh-13 " style="max-width: 550px" data-animate="fadeInUp">شركة اعتمد لتمويل المنتجات</h2>
-              <p class="fs-18 " style="max-width: 454px" data-animate="fadeInUp">شركة اعتمد هي شركة خدمات ماليه مكرسه لتقديم حلول ماليه للافراد مع فريق من المهنيين ذوي المهارات العاليه ونهج يركز على العميل كما نقدم مجموعة واسعه من الخدمات الماليه لتلبية الاحتياجات المنتنوعه لعملائنا </p>
-              <a href="products.html" class="btn btn-shop btn-secondary mt-3 border-hover-primary" data-animate="fadeInUp">تصفح المنتجات</a>
-              <a href="#" class="btn btn-download btn-secondary mt-3  border-hover-primary" data-animate="fadeInUp">
-                <img class="img-download" style="margin: 0px 5px;" src="images/download.png"/>
-                تحميل التطبيق
-              </a>
-            </div>
-            <div class="col-md-6">
-              <div style="position: relative;">
-              <svg style="max-width: 100%;" xmlns="http://www.w3.org/2000/svg" width="873" height="749" viewBox="0 0 873 749" fill="none">
-                <path opacity="0.05" d="M314.208 529.871C481.606 335.545 666.929 146.328 869.974 -10.6573C870.278 -10.8875 870.65 -11.0081 871.03 -10.9996C871.41 -10.9911 871.776 -10.854 872.069 -10.6104C872.362 -10.3669 872.565 -10.031 872.646 -9.65702C872.726 -9.28304 872.679 -8.89271 872.512 -8.54899C862.791 11.0741 852.305 30.6162 841.054 50.0772C695.607 301.894 517.817 528.371 333.179 747.509C332.347 748.482 331.42 748.577 330.4 747.793C202.394 648.786 85.7868 527.641 6.96119 384.684C3.44351 378.305 1.13419 371.953 0.0332372 365.629C-0.0365104 365.199 0.00393612 364.759 0.150604 364.35C0.297271 363.941 0.54514 363.578 0.869946 363.296C1.19475 363.014 1.58536 362.823 2.00354 362.741C2.42172 362.66 2.85313 362.691 3.25554 362.831C115.351 400.739 216.089 459.568 309.777 530.317C310.434 530.821 311.257 531.056 312.08 530.973C312.902 530.89 313.663 530.496 314.208 529.871Z" fill="#0D6C70"/>
-              </svg>
-              <div class="home-img-div" >
-              <a href="#" class="d-block" data-animate="fadeIn">
-                <img src="images/Finance-amico 1.png" alt="slider 09">
-              </a>
-              </div>
-              </div>
-            </div>
-          </div>
-        </div>
-    <!-- Button trigger modal -->
-<button type="button" class="btn complains position-fixed pos-fixed-left-center " data-toggle="modal" data-target="#exampleModal">
-  <img class="complains-img" src="images/complain.png"/>
-          
-  الشكاوي
-
-</button>
+                <span class="d-none d-xl-inline-block ml-2 font-weight-500">Search</span></button>
 
 
 
 <!-- Modal -->
-<!-- <div class="modal fade" id="exampleModall" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="exampleModalll" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
      
@@ -296,7 +262,97 @@
     
     </div>
   </div>
-</div> -->
+</div>
+            </div>
+          </nav>
+        </div>
+      </div>
+      </div>
+    </header>
+    <main id="content">
+      <section class="home-section web" style="padding: 10px 10px 0px 0px; ">
+        <div  class="container-fluid home-desc">
+          <div class="row align-items-center no-gutters">
+            <div class="home-content col-md-6 text-right py-lg-0 py-11 px-sm-0">
+              <h2 class=" lh-13 " style="max-width: 550px" data-animate="fadeInUp">شركة اعتمد لتمويل المنتجات</h2>
+              <p class="fs-18 " style="max-width: 454px" data-animate="fadeInUp">شركة اعتمد هي شركة خدمات ماليه مكرسه لتقديم حلول ماليه للافراد مع فريق من المهنيين ذوي المهارات العاليه ونهج يركز على العميل كما نقدم مجموعة واسعه من الخدمات الماليه لتلبية الاحتياجات المنتنوعه لعملائنا </p>
+              <a href="products.html" class="btn btn-shop btn-secondary mt-3 border-hover-primary" data-animate="fadeInUp">تصفح المنتجات</a>
+              <a href="#" class="btn btn-download btn-secondary mt-3  border-hover-primary" data-animate="fadeInUp">
+                <img class="img-download" style="margin: 0px 5px;" src="images/download.png"/>
+                تحميل التطبيق
+              </a>
+            </div>
+            <div class="col-md-6">
+              <div style="position: relative;">
+              <svg style="max-width: 100%;" xmlns="http://www.w3.org/2000/svg" width="873" height="749" viewBox="0 0 873 749" fill="none">
+                <path opacity="0.05" d="M314.208 529.871C481.606 335.545 666.929 146.328 869.974 -10.6573C870.278 -10.8875 870.65 -11.0081 871.03 -10.9996C871.41 -10.9911 871.776 -10.854 872.069 -10.6104C872.362 -10.3669 872.565 -10.031 872.646 -9.65702C872.726 -9.28304 872.679 -8.89271 872.512 -8.54899C862.791 11.0741 852.305 30.6162 841.054 50.0772C695.607 301.894 517.817 528.371 333.179 747.509C332.347 748.482 331.42 748.577 330.4 747.793C202.394 648.786 85.7868 527.641 6.96119 384.684C3.44351 378.305 1.13419 371.953 0.0332372 365.629C-0.0365104 365.199 0.00393612 364.759 0.150604 364.35C0.297271 363.941 0.54514 363.578 0.869946 363.296C1.19475 363.014 1.58536 362.823 2.00354 362.741C2.42172 362.66 2.85313 362.691 3.25554 362.831C115.351 400.739 216.089 459.568 309.777 530.317C310.434 530.821 311.257 531.056 312.08 530.973C312.902 530.89 313.663 530.496 314.208 529.871Z" fill="#0D6C70"/>
+              </svg>
+              <div class="home-img-div" >
+              <a href="#" class="d-block" data-animate="fadeIn">
+                <img src="images/Finance-amico 1.png" alt="slider 09">
+              </a>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    <!-- Button trigger modal -->
+<!-- <button type="button" class="btn complains position-fixed pos-fixed-left-center " data-toggle="modal" data-target="#exampleModal">
+  <img class="complains-img" src="images/complain.png"/>
+          
+  الشكاوي
+
+</button> -->
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModall" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+     
+      <div class="modal-body">
+        <form class="table-responsive-md">
+          <table style="border-radius: 16px;" class="table  mb-0">
+            <tbody>
+              <tr style="background: #0D6C70; color: #fff;" class="position-relative">
+                <td style="padding: 0.75rem;" class="align-middle text-right pr-6">
+                  <span > رقم الطلب</span>
+           
+                </td>
+                <td style="padding: 0.75rem;" class="align-middle text-right pr-6">
+                  <span> تاريخ الطلب</span>
+           
+                </td>
+                <td style="padding: 0.75rem;" class="align-middle text-right pr-6">
+                  <span >حالة الطلب</span>
+           
+                </td>
+              </tr>
+         
+              <tr class="position-relative">
+                <td class="align-middle text-right pr-6">
+                  <span > 123423455346795</span>
+           
+                </td>
+                <td class="align-middle text-right pr-6">
+                  <span > 2023 / 06 / 11 </span>
+           
+                </td>
+                <td class="align-middle text-right pr-6">
+                  <span > مقبول</span>
+           
+                </td>
+              </tr>
+      
+            </tbody>
+          </table>
+        </form>
+      </div>
+    
+    </div>
+  </div>
+</div>
 <!-- Modal -->
 <!-- <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
@@ -780,7 +836,7 @@
                     </div>
                   </div>
                 </div>
-                <button type="submit" class="btn btn-func btn-home-form btn-secondary px-7  border-hover-primary">احسب الان</button>
+                <button type="button" class="btn btn-func btn-home-form btn-secondary px-7  border-hover-primary">احسب الان</button>
               </form>
               </div>
               <div class="form-div two">
@@ -799,7 +855,7 @@
                       <h6>12 شهر</h6>
                     </div>
                   </div>
-                  <button type="submit" class="btn btn-func-bk btn-home-form btn-secondary px-7 bg-hover-primary border-hover-primary"> رجوع</button>
+                  <button type="button" class="btn btn-func-bk btn-home-form btn-secondary px-7 bg-hover-primary border-hover-primary"> رجوع</button>
                 </form>
                 </div>
               <img style="    transform: translate(-69px, -10px);" src="images/Misc_03.png"/>
@@ -846,7 +902,7 @@
                       </div>
                     </div>
                   </div>
-                  <button type="submit" class="btn btn-func btn-home-form btn-secondary px-7 bg-hover-primary border-hover-primary">احسب الان</button>
+                  <button type="button" class="btn btn-func btn-home-form btn-secondary px-7 bg-hover-primary border-hover-primary">احسب الان</button>
                 </form>
                 </div>
                 <div style="margin: auto;" class="form-div two">
@@ -866,7 +922,7 @@
                         <h6>12 شهر</h6>
                       </div>
                     </div>
-                    <button type="submit" class="btn btn-func-bk btn-home-form btn-secondary px-7 bg-hover-primary border-hover-primary"> رجوع</button>
+                    <button type="button" class="btn btn-func-bk btn-home-form btn-secondary px-7 bg-hover-primary border-hover-primary"> رجوع</button>
                   </form>
                   </div>
              </div>
@@ -1803,33 +1859,41 @@
       </div>
       <hr/>
       <div class=" container">
-      <div class="row align-items-center">
-        <div class=" col-md-6 ">
-          <p class="text-right mb-0 fs-16">جميع الحقوق محفوظة لدى شركة
-           <span style="color: #FFBB0D;
-           ">  اعتمد للتمويل 2023</span>
-            </p>
+        <div class="row align-items-center">
+          <div class=" col-md-6 ">
+            <p class="text-right mb-0 fs-16">جميع الحقوق محفوظة لدى شركة
+             <span style="color: #FFBB0D;
+             ">  اعتمد للتمويل 2023</span>
+              </p>
+          </div>
+          <div class=" col-md-6 d-flex justify-content-end text-right mob-col">
+            <a href="#">
+            <svg height="90" width="102" style="
+              transform: rotateY(180deg) scale(.35);
+              background: red;
+              padding: 15px 15px 0 15px;
+              width: 100px;
+              height: 100px;
+              margin: -1.8em -1.5em;">
+              <line x1="0" y1="0" x2="90" y2="0" style="stroke: #fff
+              ;stroke-width:35;"></line>
+              <line x1="100" y1="0" x2="0" y2="10" style="stroke: #fff;stroke-width:20;transform:rotate(40deg);">
+              </line>
+              <line x1="10" y1="95" x2="50" y2="45" style="stroke: #fff
+              ;stroke-width:20;">
+              </line>
+          </svg>
+          </a>
+            <!-- <img src="images/Mask group.png"/> -->
+          
+            <div>
+             <a href="#"><h6 style="color: #fff; font-size: 15px;">مؤسسة الرياض</h6></a>
+             <a href="#"><h6 style="font-size: 13px; color: #fff;">web & app solution</h6> </a>
+            </div>
+            
+          </div>
         </div>
-        <div class=" col-md-6 ">
-          <svg height="90" width="102" style="
-            transform: rotateY(180deg) scale(.35);
-            background: red;
-            padding: 15px 15px 0 15px;
-            width: 100px;
-            height: 100px;
-            margin: -4em -1.5em;">
-            <line x1="0" y1="0" x2="90" y2="0" style="stroke: #fff
-            ;stroke-width:35;"></line>
-            <line x1="100" y1="0" x2="0" y2="10" style="stroke: #fff;stroke-width:20;transform:rotate(40deg);">
-            </line>
-            <line x1="10" y1="95" x2="50" y2="45" style="stroke: #fff
-            ;stroke-width:20;">
-            </line>
-        </svg>
-          <img src="images/Mask group.png"/>
         </div>
-      </div>
-      </div>
     </footer>
     
     <!-- Vendors scripts -->

@@ -361,7 +361,7 @@ line-height: 25px; /* 178.571% */
   .no-ui-slider .slider-labels li.active {
      color: #333333;
      color: #fff;
-    background: #013A3D;
+    background: #C1C1C1;
     border-radius: 50px;
     width: 30px;
     height: 30px;
@@ -542,10 +542,10 @@ line-height: 25px; /* 178.571% */
   }
   .form-div.two, .form-div.one{
     border-radius: 16px;
-border-top: 1px solid #FFBB0D;
-border-right: 4px solid #FFBB0D;
-border-bottom: 4px solid #FFBB0D;
-border-left: 1px solid #FFBB0D;
+border-top: 1px solid #C1C1C1;
+border-right: 4px solid #C1C1C1;
+border-bottom: 4px solid #C1C1C1;
+border-left: 1px solid #C1C1C1;
 background: var(--white, #FFF);
   }
   .form-div.one label{
@@ -839,17 +839,21 @@ footer .footer-logo{
 {
     margin: 15px 0;
 }
-#exampleModall .modal-dialog {
+#exampleModall .modal-dialog ,
+#exampleModalll .modal-dialog{
     max-width: 670px;
 }
-#exampleModall .modal-body {
+#exampleModall .modal-body,
+#exampleModalll .modal-body  {
     padding: 0;
 }
-#exampleModall .modal-content {
+#exampleModall .modal-content,
+#exampleModalll .modal-content  {
     border-radius: 16px;
     overflow: hidden;
 }
-#exampleModall .table th, .table td{
+#exampleModall .table th, .table td,
+#exampleModalll .table th, .table td{
     /* border-top: unset; */
     padding: 2em;
 }
@@ -1649,7 +1653,10 @@ line-height: 25px; /* 156.25% */
     }
  
     .home-section #exampleModall
-        .table th, .table td {
+        .table th, .table td ,
+        .home-section #exampleModalll
+        .table th, .table td 
+        {
            
             border-top: unset;
         
@@ -1715,11 +1722,13 @@ line-height: 25px; /* 156.25% */
     .accordion.faqs-pg .card{
         background: #fff !important;
     }
-#v-pills-messages .pic-label img {
+#v-pills-messages .pic-label img ,
+#v-pills-messages .pic-label h5{
     position: absolute;
     left: 20px;
     top: 23px ;
     width: 5%;
+    color: #0D6C70;
 }
 .productss .card{
     overflow: hidden;
@@ -1872,7 +1881,7 @@ box-shadow: 0px 4px 4px 0px rgba(13, 108, 112, 0.16) !important;
 color: #fff !important;
 }
 .btn-download , .btn-func, .btn-func-bk, .btn-home-form, .btn-shop, .btn-shopp,
-.log-btn, .reg-btn , .btnNext, .btnPrevious, .complains{
+.log-btn, .reg-btn , .complains{
     box-shadow: 0px 4px 4px 0px rgba(13, 108, 112, 0.16) !important;
 }
 .msg-div:hover{
@@ -1921,6 +1930,26 @@ border-left: 1px solid var(--dark, #013A3D) !important;
 .sidenav .nav-link.dropdown-toggle .caret {
     margin-left: 0;
     margin-top: -3px;
+}
+.home-section #exampleModall .table th, .table td ,
+.home-section #exampleModalll .table th, .table td {
+    border-top: unset !important;
+}
+.modal-backdrop.show{
+    z-index: 1;
+}
+.srch-mob-btn{
+    
+    font-weight: 600;
+    color: #7E7E7E;
+ 
+    background-color: transparent;
+    border: 1px solid transparent;
+    
+
+
+    border-radius: 3px;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 @media (max-width:1200px){
     .sidenav  .caret {
@@ -2032,6 +2061,9 @@ border-left: 1px solid var(--dark, #013A3D) !important;
     }
   }
   @media (max-width:767px){
+    .mob-col{
+        justify-content: center !important;
+    }
     .accordion .card-header a{
         padding: 1em;
     }
