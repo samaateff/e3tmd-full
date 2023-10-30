@@ -1582,17 +1582,26 @@ $('.btnNext').click(function(){
     $('.btnPrevious').click(function(){
     $('.nav-tabs > .active').prev('button').trigger('click');
   });
-
+// label settings
   $('.hidden-label').click(function(){
-    // $(this).css('top','5px');
-    // $(this).css('font-size','12px');
-    // $(this).prev('input').css('padding-top', '35px');
-    // $(this).prev('input').css('padding-bottom', '15px');
+    $(this).css('top','5px');
+    $(this).css('font-size','12px');
+    $(this).prev('input').css('padding-top', '35px');
+    $(this).prev('input').css('padding-bottom', '15px');
     $(this).prev('input').trigger('focus');
 
   });
 
+  $('.focus-label').click(function(){
+    $(this).next('label').css('top','5px');
+    $(this).next('label').css('font-size','12px');
+    $(this).css('padding-top', '35px');
+    $(this).css('padding-bottom', '15px');
+    $(this).trigger('focus');
 
+  });
+
+// on keypress
   $( ".focus-label" ).on( "keypress", function() {
     $(this).next('label').css('top', '5px');
     $(this).next('label').css('font-size', '12px');
@@ -1602,7 +1611,7 @@ $('.btnNext').click(function(){
     $(this).css('padding-bottom', '15px');
   } );
 
-
+// pass icon 
   $(".toggle-password").click(function() {
 
   $(this).toggleClass("fa-eye fa-eye-slash");
