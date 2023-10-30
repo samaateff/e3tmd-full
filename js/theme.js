@@ -1583,6 +1583,15 @@ $('.btnNext').click(function(){
     $('.nav-tabs > .active').prev('button').trigger('click');
   });
 
+  $('.hidden-label').click(function(){
+    // $(this).css('top','5px');
+    // $(this).css('font-size','12px');
+    // $(this).prev('input').css('padding-top', '35px');
+    // $(this).prev('input').css('padding-bottom', '15px');
+    $(this).prev('input').trigger('focus');
+
+  });
+
 
   $( ".focus-label" ).on( "keypress", function() {
     $(this).next('label').css('top', '5px');
@@ -1606,7 +1615,7 @@ $('.btnNext').click(function(){
 });
 
 
-
+// otp inputs
 document.addEventListener("DOMContentLoaded", function () {
     var otpInputs = document.querySelectorAll(".otp-input");
     var emailOtpInputs = document.querySelectorAll(".email-otp-input");

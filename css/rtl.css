@@ -1800,7 +1800,7 @@ line-height: 25px; /* 156.25% */
 transition:  all 0.5s; 
 }
 .well-form label.hidden-label{
-    
+    cursor: auto;
     /* display: none; */
     transition: all 0.5s;
 
